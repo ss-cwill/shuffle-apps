@@ -1,0 +1,81 @@
+app_version: 1.0.0
+name: SS - Proofpoint Admins
+description: Proofpoint Protection Server Admin Management
+contact_info:
+  name: "SS"
+  url: "nothing here"
+  email: "rd@example.com"
+tags:
+  - email
+  - proofpoint
+  - pps
+categories:
+  - email
+authentication:
+  required: true
+  parameters:
+    - name: server
+      description: "Server fqdn or ip address."
+      example: "server-1.mycompany.com or 127.0.0.1"
+      required: true
+      schema:
+        type: string
+    - name: port
+      description: "Server port."
+      required: true
+      example: "10000"
+      schema:
+        type: string
+    - name: username
+      description: "Username to do basic auth with"
+      example: "binduser"
+      required: true
+      schema:
+        type: string
+    - name: password
+      description: "Password for api user."
+      example: "Password1IsBad!"
+      required: true
+      schema:
+        type: string
+actions:
+  - name: create_admin
+    description: Creates an admin with specified role
+    parameters:
+      - name: userid
+        description: "Username for new admin"
+        required: true
+        example: 'bwayne'
+        schema:
+          type: string
+      - name: password
+        description: "Password for new admin"
+        required: true
+        multiline: false
+        example: "Password1IsBad"
+        schema:
+          type: string
+      - name: fullname
+        description: "Full name of new admin"
+        required: true
+        multiline: false
+        example: "Bruce Wayne"
+        schema:
+          type: string
+      - name: emailaddress
+        description: "Email address of new admin"
+        required: false
+        multiline: false
+        example: "bwayne@safesystems.com"
+        schema:
+          type: string
+      - name: role
+        description: "Proofpoint Role for new admin"
+        required: true
+        multiline: false
+        example: "emailops"
+        schema:
+          type: string
+    returns:
+      schema:
+        type: string
