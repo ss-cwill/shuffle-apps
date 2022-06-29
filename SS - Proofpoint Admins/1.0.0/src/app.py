@@ -33,7 +33,6 @@ class ProofPoint(AppBase):
     ):
         url_base = "https://" + server + ":" + port + "/rest/v1/administrator"
         querystring = {
-            'action': action,
             'id': userid,
             'password': password,
             'full_name': fullname,
