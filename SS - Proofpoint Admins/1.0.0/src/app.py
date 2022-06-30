@@ -40,7 +40,7 @@ class ProofPoint(AppBase):
             'role': role
         }
         headers = {"Accept": "application/json"}
-        send_request = self.POST(url_base,headers=headers,auth=(apiusername,apipassword),params=querystring,verify=False)
+        send_request = requests.POST(url_base,headers=headers,auth=(apiusername,apipassword),params=querystring,verify=False)
         return send_request
         
 
