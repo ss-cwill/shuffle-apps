@@ -26,13 +26,13 @@ authentication:
       example: "10000"
       schema:
         type: string
-    - name: username
+    - name: apiusername
       description: "Username to do basic auth with"
-      example: "binduser"
+      example: "apiuser"
       required: true
       schema:
         type: string
-    - name: password
+    - name: apipassword
       description: "Password for api user."
       example: "Password1IsBad!"
       required: true
