@@ -16,7 +16,7 @@ from walkoff_app_sdk.app_base import AppBase
 # and automatically get the right rules set up with your tools :O
 class exchange_powershell(AppBase):
     __version__ = "1.0.0"
-    app_name = "exchange-powershell"  
+    app_name = "SS - Azure Powershell"  
 
     def __init__(self, redis, logger, console_logger=None):
         """

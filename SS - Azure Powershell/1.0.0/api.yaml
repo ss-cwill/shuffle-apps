@@ -1,10 +1,10 @@
-app_version: 1.1.0
-name: Exchange Powershell 
+app_version: 1.0.0
+name: SS - Azure Powershell 
 description: An app to interact with emails to be downloaded and release quarantined emails from office365 using Powershell
 contact_info:
-  name: "@frikkylikeme"
-  url: https://github.com/vlegoy/rcATT
-  email: frikky@shuffler.io
+  name: "SS"
+  url: https://github.com/
+  email: ss@example.com
 tags:
   - Communication 
 categories:
