@@ -1,6 +1,6 @@
 app_version: 1.0.0
 name: SS - Azure Powershell 
-description: An app to interact with emails to be downloaded and release quarantined emails from office365 using Powershell
+description: An app to interact with Azure, O365 Quarantine, etc, via Powershell
 contact_info:
   name: "SS"
   url: https://github.com/
