@@ -53,7 +53,7 @@ RUN chmod +x /opt/microsoft/powershell/7/pwsh
 # Create the symbolic link that points to pwsh
 RUN ln -s /opt/microsoft/powershell/7/pwsh /usr/bin/pwsh
 #RUN pwsh -Command Install-Module -Name ExchangeOnlineManagement -AllowPrerelease -Force -RequiredVersion 2.0.6-Preview5
-RUN pwsh -Command Install-Module -Name Microsoft.Graph -Force
+RUN pwsh -Command Install-Module Microsoft.Graph -Force
 RUN sh -c "yes | pwsh -Command 'Install-Module -Name PSWSMan'" 
 RUN pwsh -Command 'Install-WSMan'
 RUN pwsh -Command Import-Module 'Microsoft.PowerShell.Security' -Force
