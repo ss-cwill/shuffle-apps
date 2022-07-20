@@ -1,7 +1,7 @@
 ## Features
 create admin
-
+delete admin
+audit admins
 
 ## Upcoming Features
-remove admin
-audit admins? 
+change role? 
